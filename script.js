@@ -259,9 +259,9 @@
     'modal-hackathon': {
       title: 'Agentic AI Hackathon Site',
       tag: 'Web / Design',
-      problem: 'Hackathon organizers needed a premium event website that projected credibility and drove sign-ups — with no design budget and a 48-hour deadline.',
+      problem: 'Hackathon organizers needed a premium event website that projected credibility and drove sign-ups — with no design budget and a 6-hour deadline.',
       solution: 'Designed and shipped a full static website from scratch with glassmorphism UI, animated countdown timer, schedule, sponsor section, and FAQ. Deployed on GitHub Pages with zero cost.',
-      impact: ['Shipped in 48 hours, used by real event organizers', 'Premium design at zero hosting/framework cost', 'Full responsive layout, mobile-first'],
+      impact: ['Shipped in 6 hours, used by real event organizers', 'Premium design at zero hosting/framework cost', 'Full responsive layout, mobile-first'],
       stack: ['HTML', 'CSS', 'Vanilla JS', 'GitHub Pages', 'Google Fonts'],
     },
   };
