@@ -5,279 +5,243 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Rishi Kulkarni — Building AI + Scalable Systems. Product-minded engineer who designs and ships real-world products." />
-  <meta property="og:title" content="Rishi Kulkarni — Engineer & Builder" />
-  <meta property="og:description" content="Building AI + Scalable Systems. Real products, not tutorials." />
-  <meta property="og:type" content="website" />
-  <title>Rishi Kulkarni — Engineer & Builder</title>
+    content="Rishi P Kulkarni — AI & Cloud Systems Engineer. Building backend systems, cloud-native applications, distributed infrastructure, and full-stack platforms." />
+  <meta property="og:title" content="Rishi P Kulkarni — AI & Systems Engineer" />
+  <meta property="og:description"
+    content="Computer Science (AI) @ KLE Tech | AWS Student Builder Lead | GenAI & Agentic AI Hackathon Winner" />
+  <title>Rishi P Kulkarni — AI & Systems Engineer</title>
+
+  <!-- Fonts: Outfit (Crisp Display), Instrument Serif (Editorial Accent), Space Grotesk (Tech Body), JetBrains Mono (Code/Badges) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- NAV -->
+  <!-- TOP RUNNING TICKER / MARQUEE -->
+  <div class="ticker-bar" aria-label="Latest News & Achievements">
+    <div class="ticker-content">
+      <span class="ticker-item">★ BEST PAPER AWARD — ComSIA 2026 (Springer)</span>
+      <span class="ticker-item">★ WINNER — State-Level GenAI Hackathon 2026</span>
+      <span class="ticker-item">★ WINNER — State-Level Agentic AI Hackathon 2026</span>
+      <span class="ticker-item">★ GLOBAL RANK 15 — WiDS Datathon Challenge 2025</span>
+      <span class="ticker-item">★ AWS STUDENT BUILDER GROUPS CHAPTER LEAD</span>
+      <span class="ticker-item">★ GOOGLE STUDENT AMBASSADOR</span>
+      <span class="ticker-item">★ ACCEPTED — NCMEDAI 2026 (Springer)</span>
+      <!-- Duplicate for seamless scroll -->
+      <span class="ticker-item">★ BEST PAPER AWARD — ComSIA 2026 (Springer)</span>
+      <span class="ticker-item">★ WINNER — State-Level GenAI Hackathon 2026</span>
+      <span class="ticker-item">★ WINNER — State-Level Agentic AI Hackathon 2026</span>
+      <span class="ticker-item">★ GLOBAL RANK 15 — WiDS Datathon Challenge 2025</span>
+      <span class="ticker-item">★ AWS STUDENT BUILDER GROUPS CHAPTER LEAD</span>
+    </div>
+  </div>
+
+  <!-- MAIN EDITORIAL NAVIGATION -->
   <nav id="main-nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo" id="nav-logo">RK<span class="logo-dot">.</span></a>
-      <ul class="nav-links" role="list">
-        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
-        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
-        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-contact-link">Contact</a></li>
-      </ul>
-      <a href="mailto:rishi@example.com" class="nav-cta" id="nav-cta-btn">Hire Me</a>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-title">RISHI P KULKARNI</span>
+        <span class="brand-sub">HUBBALLI, INDIA</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#projects" class="nav-item">SYSTEMS & WORK</a>
+        <a href="#research" class="nav-item">RESEARCH & AWARDS</a>
+        <a href="#stack" class="nav-item">TECH STACK</a>
+        <a href="#leadership" class="nav-item">LEADERSHIP</a>
+        <a href="#contact" class="nav-item">DISPATCH</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="mailto:rishipkulkarni@gmail.com" class="btn btn-pill-solid">GET IN TOUCH &rarr;</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span><span></span>
       </button>
     </div>
-    <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
-      <a href="#projects" class="mobile-link" id="mobile-nav-projects">Projects</a>
-      <a href="#about" class="mobile-link" id="mobile-nav-about">About</a>
-      <a href="#skills" class="mobile-link" id="mobile-nav-skills">Skills</a>
-      <a href="#contact" class="mobile-link" id="mobile-nav-contact">Contact</a>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#projects" class="mobile-link">SYSTEMS & WORK</a>
+      <a href="#research" class="mobile-link">RESEARCH & AWARDS</a>
+      <a href="#stack" class="mobile-link">TECH STACK</a>
+      <a href="#leadership" class="mobile-link">LEADERSHIP</a>
+      <a href="#contact" class="mobile-link">DISPATCH</a>
+      <a href="mailto:rishipkulkarni@gmail.com" class="btn btn-pill-solid w-full" style="margin-top:16px;">GET IN TOUCH
+        &rarr;</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero" class="hero" aria-label="Introduction">
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
-    <div class="hero-content">
-      <div class="hero-badge reveal-up" id="hero-badge">
-        <span class="badge-dot"></span>
-        Available for opportunities
+  <!-- HERO SECTION (EDITORIAL STATEMENT) -->
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-meta-badge">
+        <span class="status-pulse"></span>
+        COMPUTER SCIENCE & AI @ KLE TECH UNIVERSITY · CGPA 8.68/10
       </div>
-      <h1 class="hero-name reveal-up" id="hero-name">
-        Rishi<br /><span class="name-accent">Kulkarni</span>
+
+      <h1 class="hero-title">
+        Architecting <br />
+        <span class="serif-italic">Distributed</span> Cloud Systems <br />
+        &amp; Intelligent <span class="accent-text">AI Engines.</span>
       </h1>
-      <p class="hero-title reveal-up" id="hero-title">Building AI + Scalable Systems</p>
-      <p class="hero-tagline reveal-up" id="hero-tagline">
-        I design and ship real-world products, not tutorials
+
+      <p class="hero-manifesto">
+        Backend Engineer, Cloud Architect, and AI Researcher building full-stack platforms, high-throughput RAG engines,
+        containerized ETL orchestrators, and 5G network slicing infrastructure. Focused on production robustness, data
+        performance, and system transparency.
       </p>
-      <div class="hero-actions reveal-up" id="hero-actions">
-        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
-          <span>View Projects</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
-          id="hero-btn-github">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-          </svg>
-          GitHub
-        </a>
-        <a href="#contact" class="btn btn-ghost" id="hero-btn-contact">Contact</a>
-      </div>
-    </div>
-    <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
 
-  <!-- STATS BAR -->
-  <section class="stats-bar" id="stats" aria-label="Quick stats">
-    <div class="stats-inner">
-      <div class="stat-item" id="stat-projects">
-        <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
-        <span class="stat-label">Projects Shipped</span>
+      <div class="hero-actions-row">
+        <a href="#projects" class="btn btn-pill-solid btn-lg">VIEW PROVEN SYSTEMS &rarr;</a>
+        <a href="https://github.com/geeky-rish" target="_blank" rel="noopener noreferrer"
+          class="btn btn-pill-outline btn-lg">GITHUB REPOS &rarr;</a>
+        <a href="https://linkedin.com/in/rishipkulkarni" target="_blank" rel="noopener noreferrer"
+          class="btn btn-pill-outline btn-lg">LINKEDIN PROFILE &rarr;</a>
       </div>
-      <div class="stat-divider" aria-hidden="true"></div>
-      <div class="stat-item" id="stat-experience">
-        <span class="stat-number" data-count="2">0</span><span class="stat-suffix">+</span>
-        <span class="stat-label">Years Building</span>
-      </div>
-      <div class="stat-divider" aria-hidden="true"></div>
-      <div class="stat-item" id="stat-stack">
-        <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
-        <span class="stat-label">Technologies</span>
-      </div>
-      <div class="stat-divider" aria-hidden="true"></div>
-      <div class="stat-item" id="stat-focus">
-        <span class="stat-text">AI/ML + Systems</span>
-        <span class="stat-label">Focus Area</span>
+
+      <!-- Quick Metrics Strip -->
+      <div class="hero-stats-grid">
+        <div class="hero-stat-card">
+          <span class="stat-val">8.68</span>
+          <span class="stat-lbl">CGPA / KLE TECH B.E. CS (AI)</span>
+        </div>
+        <div class="hero-stat-card">
+          <span class="stat-val">2×</span>
+          <span class="stat-lbl">STATE HACKATHON WINNER (2026)</span>
+        </div>
+        <div class="hero-stat-card">
+          <span class="stat-val">RANK 15</span>
+          <span class="stat-lbl">WIDS GLOBAL DATATHON 2025</span>
+        </div>
+        <div class="hero-stat-card">
+          <span class="stat-val">1st AUTHOR</span>
+          <span class="stat-lbl">COMSIA 2026 BEST PAPER AWARD</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section projects-section" aria-label="Projects">
+  <!-- CHAPTER 01: PROJECTS & PROVEN SYSTEMS -->
+  <section id="projects" class="section-editorial theme-cream">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label reveal-up">Selected Work</span>
-        <h2 class="section-title reveal-up" id="projects-heading">Products I've Built</h2>
-        <p class="section-subtitle reveal-up">Each project is a problem I chose to solve — shipped end-to-end.</p>
+      <div class="chapter-header">
+        <span class="chapter-num">CHAPTER 01</span>
+        <h2 class="chapter-title">Proven Systems &amp; Infrastructure.</h2>
+        <p class="chapter-desc">End-to-end architectures designed for asynchronous throughput, containerized
+          orchestration, and real-time observability.</p>
       </div>
 
-      <div class="projects-grid" id="projects-grid" role="list">
+      <div class="projects-list">
 
-        <!-- Project 1 -->
-        <article class="project-card" id="project-adapti-llm" role="listitem" tabindex="0" data-modal="modal-adapti">
-          <div class="card-glow" aria-hidden="true"></div>
-          <div class="card-image">
-            <div class="card-image-placeholder p1-gradient" aria-hidden="true">
-              <div class="mock-ui">
-                <div class="mock-bar"></div>
-                <div class="mock-row"></div>
-                <div class="mock-row short"></div>
-                <div class="mock-row medium"></div>
-                <div class="mock-chip"></div>
-              </div>
+        <!-- PROJECT 1 -->
+        <article class="project-editorial-card" data-modal="modal-docchat">
+          <div class="project-num">01</div>
+          <div class="project-main">
+            <div class="project-tags">
+              <span class="tag">FASTAPI</span>
+              <span class="tag">REACT</span>
+              <span class="tag">POSTGRESQL</span>
+              <span class="tag">REDIS</span>
+              <span class="tag">DOCKER</span>
+              <span class="tag">JWT</span>
             </div>
-            <div class="card-tag">AI / Mobile</div>
+            <h3 class="project-name">DocChat <span class="serif-italic">— Full-Stack RAG Document Q&amp;A
+                Platform</span></h3>
+            <p class="project-summary">
+              End-to-end asynchronous document intelligence platform enabling conversational querying of uploaded
+              documentation via an optimized Retrieval-Augmented Generation (RAG) pipeline.
+            </p>
+            <div class="project-impact-box">
+              <strong>Key Architecture &amp; Impact:</strong>
+              <ul>
+                <li>Implemented JWT authentication &amp; async document ingestion queues, unlocking non-blocking vector
+                  embedding generation.</li>
+                <li>Leveraged PostgreSQL for relational domain data and Redis caching for recurring search results,
+                  cutting latency.</li>
+                <li>Full containerized multi-container orchestration with Docker for zero-friction local and production
+                  parity.</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <h3 class="card-title">AdaptiLLM</h3>
-            <p class="card-problem"><span class="label">Problem →</span> On-device LLMs on Android either crashed from
-              OOM or were too slow to be useful.</p>
-            <p class="card-solution"><span class="label">Solution →</span> Built a dynamic context-aware inference
-              engine that auto-manages memory and streams tokens for near-instant perceived response.</p>
-            <div class="card-stack">
-              <span class="tech-tag">Android</span>
-              <span class="tech-tag">Kotlin</span>
-              <span class="tech-tag">LLM Inference</span>
-              <span class="tech-tag">GGUF</span>
-            </div>
-            <div class="card-impact">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M7 1l1.5 4h4L9 8l1.5 4L7 10l-3.5 2L5 8 1.5 5h4z" fill="#7c3aed" />
-              </svg>
-              On-device inference with adaptive memory management
-            </div>
-            <div class="card-actions">
-              <a href="#" class="card-btn card-btn-primary" id="proj-adapti-demo" aria-label="Live demo AdaptiLLM">Live
-                Demo</a>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-ghost"
-                id="proj-adapti-source" aria-label="Source code AdaptiLLM">Source Code</a>
-            </div>
+          <div class="project-side-cta">
+            <button class="btn btn-pill-outline btn-sm">VIEW ARCHITECTURE DEEP-DIVE &rarr;</button>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="project-card featured" id="project-watchman" role="listitem" tabindex="0"
-          data-modal="modal-watchman">
-          <div class="card-glow" aria-hidden="true"></div>
-          <div class="featured-badge">Featured</div>
-          <div class="card-image">
-            <div class="card-image-placeholder p2-gradient" aria-hidden="true">
-              <div class="mock-ui mock-cctv">
-                <div class="mock-cctv-grid">
-                  <div class="mock-feed">
-                    <div class="mock-detect-box"></div>
-                  </div>
-                  <div class="mock-feed"></div>
-                  <div class="mock-feed"></div>
-                  <div class="mock-feed"></div>
-                </div>
-              </div>
+        <!-- PROJECT 2 -->
+        <article class="project-editorial-card" data-modal="modal-dataforge">
+          <div class="project-num">02</div>
+          <div class="project-main">
+            <div class="project-tags">
+              <span class="tag">SPARK</span>
+              <span class="tag">FASTAPI</span>
+              <span class="tag">MINIO</span>
+              <span class="tag">POSTGRESQL</span>
+              <span class="tag">ETL PIPELINES</span>
+              <span class="tag">DOCKER</span>
             </div>
-            <div class="card-tag">AI / Computer Vision</div>
+            <h3 class="project-name">DataForge <span class="serif-italic">— Enterprise Data Pipeline Orchestrator</span>
+            </h3>
+            <p class="project-summary">
+              Distributed data pipeline orchestration framework designed for dataset ingestion, scheduled Apache Spark
+              ETL jobs, and enterprise metadata management.
+            </p>
+            <div class="project-impact-box">
+              <strong>Key Architecture &amp; Impact:</strong>
+              <ul>
+                <li>Engineered reusable data transformation workflows for automated cleaning, aggregation, and strict
+                  validation.</li>
+                <li>Integrated S3-compatible MinIO object storage alongside PostgreSQL for persistent state and lineage
+                  tracking.</li>
+                <li>Built resilient scheduled execution triggers with failure fallback &amp; real-time execution logs.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <h3 class="card-title">Watchman CCTV</h3>
-            <p class="card-problem"><span class="label">Problem →</span> Professional CCTV systems cost thousands; most
-              homeowners have no real-time human detection.</p>
-            <p class="card-solution"><span class="label">Solution →</span> Repurposed Android phones as IP cameras
-              feeding a YOLOv8 detection pipeline with instant desktop alerts — zero hardware cost.</p>
-            <div class="card-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">YOLOv8</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">DroidCam</span>
-            </div>
-            <div class="card-impact">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M7 1l1.5 4h4L9 8l1.5 4L7 10l-3.5 2L5 8 1.5 5h4z" fill="#7c3aed" />
-              </svg>
-              Real-time detection at ~30 FPS, sub-second alert latency
-            </div>
-            <div class="card-actions">
-              <a href="#" class="card-btn card-btn-primary" id="proj-watchman-demo" aria-label="Live demo Watchman">Live
-                Demo</a>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-ghost"
-                id="proj-watchman-source" aria-label="Source code Watchman">Source Code</a>
-            </div>
+          <div class="project-side-cta">
+            <button class="btn btn-pill-outline btn-sm">VIEW ARCHITECTURE DEEP-DIVE &rarr;</button>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="project-card" id="project-hackathon-site" role="listitem" tabindex="0"
-          data-modal="modal-hackathon">
-          <div class="card-glow" aria-hidden="true"></div>
-          <div class="card-image">
-            <div class="card-image-placeholder p3-gradient" aria-hidden="true">
-              <div class="mock-ui">
-                <div class="mock-hero-block"></div>
-                <div class="mock-row"></div>
-                <div class="mock-chips">
-                  <div class="mock-chip"></div>
-                  <div class="mock-chip"></div>
-                  <div class="mock-chip"></div>
-                </div>
-              </div>
+        <!-- PROJECT 3 -->
+        <article class="project-editorial-card" data-modal="modal-5g">
+          <div class="project-num">03</div>
+          <div class="project-main">
+            <div class="project-tags">
+              <span class="tag">KUBERNETES</span>
+              <span class="tag">OPEN5GS</span>
+              <span class="tag">UERANSIM</span>
+              <span class="tag">PROMETHEUS</span>
+              <span class="tag">GRAFANA</span>
+              <span class="tag">PYTHON</span>
             </div>
-            <div class="card-tag">Web / Design</div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Agentic AI Hackathon Site</h3>
-            <p class="card-problem"><span class="label">Problem →</span> Hackathon organizers needed a premium-looking
-              event page that builds credibility and drives registrations.</p>
-            <p class="card-solution"><span class="label">Solution →</span> Designed and shipped a full event website
-              with premium glassmorphism UI, countdown timer, and sponsor sections — in a single weekend.</p>
-            <div class="card-stack">
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">GitHub Pages</span>
-            </div>
-            <div class="card-impact">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M7 1l1.5 4h4L9 8l1.5 4L7 10l-3.5 2L5 8 1.5 5h4z" fill="#7c3aed" />
-              </svg>
-              Shipped in 6 hrs, used by real event organizers
-            </div>
-            <div class="card-actions">
-              <a href="#" class="card-btn card-btn-primary" id="proj-hackathon-demo"
-                aria-label="Live demo Hackathon site">Live Demo</a>
-              <a href="https://github.com/geeky-rish/agentic-ai-hackathon" target="_blank" rel="noopener noreferrer"
-                class="card-btn card-btn-ghost" id="proj-hackathon-source"
-                aria-label="Source code Hackathon site">Source Code</a>
+            <h3 class="project-name">Intelligent 5G Network Slice Orchestrator <span class="serif-italic">— Cloud-Native
+                Testbed</span></h3>
+            <p class="project-summary">
+              Automated Kubernetes-native slicing testbed using Open5GS and UERANSIM to emulate eMBB, URLLC, and mMTC
+              network service classes dynamically.
+            </p>
+            <div class="project-impact-box">
+              <strong>Key Architecture &amp; Impact:</strong>
+              <ul>
+                <li>Developed automated Python control loop monitoring QoS metrics to dynamically re-allocate
+                  CPU/Bandwidth via Kubernetes APIs.</li>
+                <li>Integrated Prometheus and Grafana for full-stack real-time telemetry across multi-tenant network
+                  slices.</li>
+                <li>Research manuscript currently under peer review for journal publication.</li>
+              </ul>
             </div>
           </div>
-        </article>
-
-        <!-- Project 4 - Placeholder -->
-        <article class="project-card" id="project-placeholder" role="listitem" tabindex="0">
-          <div class="card-glow" aria-hidden="true"></div>
-          <div class="card-image">
-            <div class="card-image-placeholder p4-gradient" aria-hidden="true">
-              <div class="mock-ui">
-                <div class="mock-row"></div>
-                <div class="mock-row short"></div>
-                <div class="mock-row medium"></div>
-              </div>
-            </div>
-            <div class="card-tag">Coming Soon</div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Next Project</h3>
-            <p class="card-problem"><span class="label">Status →</span> Currently in development. Something interesting
-              in the AI + systems space.</p>
-            <p class="card-solution"><span class="label">ETA →</span> Check back soon or follow on GitHub.</p>
-            <div class="card-stack">
-              <span class="tech-tag">TBD</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-ghost"
-                id="proj-placeholder-github">Follow on GitHub</a>
-            </div>
+          <div class="project-side-cta">
+            <button class="btn btn-pill-outline btn-sm">VIEW ARCHITECTURE DEEP-DIVE &rarr;</button>
           </div>
         </article>
 
@@ -285,227 +249,259 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section about-section" aria-label="About Rishi">
+  <!-- CHAPTER 02: RESEARCH, HONORS & PUBLICATIONS -->
+  <section id="research" class="section-editorial theme-dark">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-left">
-          <span class="section-label reveal-up">About</span>
-          <h2 class="section-title reveal-up" id="about-heading">How I Think<br />About Building</h2>
-          <div class="about-avatar-wrap reveal-up" id="about-avatar">
-            <div class="about-avatar">
-              <div class="avatar-initials">RK</div>
-              <div class="avatar-ring" aria-hidden="true"></div>
-            </div>
-            <div class="about-availability">
-              <span class="avail-dot"></span>
-              Open to work
-            </div>
-          </div>
-        </div>
-        <div class="about-right">
-          <div class="about-block reveal-up" id="about-block-1">
-            <div class="about-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div>
-              <h3>I obsess over the problem first</h3>
-              <p>Before writing a single line of code, I ask: does this actually need to exist? I care about shipping
-                things that solve real friction — not things that look impressive in a demo but die in production.</p>
-            </div>
-          </div>
-          <div class="about-block reveal-up" id="about-block-2">
-            <div class="about-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div>
-              <h3>I ship, then iterate</h3>
-              <p>I believe in momentum over perfection. Get a working version in front of users fast, gather real
-                signal, then refine. Most engineers spend months polishing; I prefer to spend weeks learning.</p>
-            </div>
-          </div>
-          <div class="about-block reveal-up" id="about-block-3">
-            <div class="about-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div>
-              <h3>I care about the seams</h3>
-              <p>AI can generate code. What matters is the architectural judgment — knowing where state lives, where
-                failures cascade, how to keep the system debuggable six months from now. That's the craft I'm building.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section skills-section" aria-label="Skills and technologies">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label reveal-up">Expertise</span>
-        <h2 class="section-title reveal-up" id="skills-heading">Tools I Build With</h2>
-        <p class="section-subtitle reveal-up">Not just familiar — actually used in production or shipped projects.</p>
+      <div class="chapter-header light-text">
+        <span class="chapter-num gold-text">CHAPTER 02</span>
+        <h2 class="chapter-title">Research Output &amp; Major Honors.</h2>
+        <p class="chapter-desc">Academic publications in Springer journals, top-tier global hackathon wins, and
+          competitive ML datathon titles.</p>
       </div>
 
-      <div class="skills-grid" id="skills-grid">
-        <div class="skill-group reveal-up" id="skill-group-languages">
-          <div class="skill-group-header">
-            <div class="skill-group-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3>Languages</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag" id="skill-python">Python</span>
-            <span class="skill-tag" id="skill-kotlin">Kotlin</span>
-            <span class="skill-tag" id="skill-java">Java</span>
-            <span class="skill-tag" id="skill-js">JavaScript</span>
-            <span class="skill-tag" id="skill-html-css">HTML/CSS</span>
-            <span class="skill-tag" id="skill-sql">SQL</span>
-          </div>
-        </div>
+      <div class="honors-grid">
 
-        <div class="skill-group reveal-up" id="skill-group-ai">
-          <div class="skill-group-header">
-            <div class="skill-group-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-2"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3>AI / ML</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag" id="skill-yolo">YOLOv8</span>
-            <span class="skill-tag" id="skill-llm">LLM Inference</span>
-            <span class="skill-tag" id="skill-opencv">OpenCV</span>
-            <span class="skill-tag" id="skill-pytorch">PyTorch</span>
-            <span class="skill-tag" id="skill-gguf">GGUF / llama.cpp</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal-up" id="skill-group-frameworks">
-          <div class="skill-group-header">
-            <div class="skill-group-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="1.5" />
-                <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-            </div>
-            <h3>Frameworks & Platforms</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag" id="skill-android">Android SDK</span>
-            <span class="skill-tag" id="skill-nextjs">Next.js</span>
-            <span class="skill-tag" id="skill-flask">Flask</span>
-            <span class="skill-tag" id="skill-fastapi">FastAPI</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal-up" id="skill-group-tools">
-          <div class="skill-group-header">
-            <div class="skill-group-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  stroke="currentColor" stroke-width="1.5" />
-                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" />
-              </svg>
-            </div>
-            <h3>Tools & DevOps</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag" id="skill-git">Git / GitHub</span>
-            <span class="skill-tag" id="skill-docker">Docker</span>
-            <span class="skill-tag" id="skill-githubpages">GitHub Pages</span>
-            <span class="skill-tag" id="skill-androidstudio">Android Studio</span>
-            <span class="skill-tag" id="skill-colab">Google Colab</span>
-            <span class="skill-tag" id="skill-cursor">Cursor / Copilot</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact-section" aria-label="Contact">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="contact-text">
-          <span class="section-label reveal-up">Let's Talk</span>
-          <h2 class="section-title reveal-up" id="contact-heading">Let's build<br />something real.</h2>
-          <p class="contact-desc reveal-up" id="contact-desc">
-            Whether it's a new project, an open role, or a problem worth solving together — I'm always open to the right
-            conversation.
+        <div class="honor-card gold-border">
+          <div class="honor-badge">SPRINGER PUBLICATION</div>
+          <h3 class="honor-title">Best Paper Award — ComSIA 2026</h3>
+          <div class="honor-meta">First Author · Springer Conference Series</div>
+          <p class="honor-desc">
+            Awarded <strong>Best Paper Award</strong> for original research paper titled <em>"Reinforcement Learning for
+              Dynamic Pricing"</em>. Developed multi-agent RL algorithms optimizing revenue &amp; demand elasticity
+            under stochastic constraints.
           </p>
         </div>
-        <div class="contact-links reveal-up" id="contact-links">
-          <a href="mailto:rishi@example.com" class="contact-card" id="contact-email" aria-label="Send email to Rishi">
-            <div class="contact-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+
+        <div class="honor-card">
+          <div class="honor-badge">ACCEPTED MANUSCRIPT</div>
+          <h3 class="honor-title">NCMEDAI 2026 Research Paper</h3>
+          <div class="honor-meta">Author · Springer Proceedings</div>
+          <p class="honor-desc">
+            Accepted deep learning research paper focused on domain-adapted neural models and specialized feature
+            representation algorithms.
+          </p>
+        </div>
+
+        <div class="honor-card">
+          <div class="honor-badge">GLOBAL DATATHON</div>
+          <h3 class="honor-title">Global Public Rank 15 — WiDS Datathon 2025</h3>
+          <div class="honor-meta">Women in Data Science (WiDS) Challenge</div>
+          <p class="honor-desc">
+            Achieved <strong>Global Public Rank 15</strong> out of thousands of international teams by building robust
+            gradient-boosted ensembles and rigorous cross-validation feature pipelines.
+          </p>
+        </div>
+
+        <div class="honor-card">
+          <div class="honor-badge">STATE HACKATHON WINNER</div>
+          <h3 class="honor-title">Winner — GenAI Hackathon 2026</h3>
+          <div class="honor-meta">State-Level Competition · KLE Tech</div>
+          <p class="honor-desc">
+            Secured 1st Place overall for engineering a real-time Generative AI workflow application under tight sprint
+            constraints.
+          </p>
+        </div>
+
+        <div class="honor-card">
+          <div class="honor-badge">STATE HACKATHON WINNER</div>
+          <h3 class="honor-title">Winner — Agentic AI Hackathon 2026</h3>
+          <div class="honor-meta">State-Level Competition · KLE Tech</div>
+          <p class="honor-desc">
+            Secured 1st Place overall by building multi-agent collaborative tools featuring dynamic task delegation and
+            local model invocation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 03: TECHNICAL SKILLS & STACK -->
+  <section id="stack" class="section-editorial theme-cream">
+    <div class="container">
+      <div class="chapter-header">
+        <span class="chapter-num">CHAPTER 03</span>
+        <h2 class="chapter-title">Technical Mastery &amp; Tooling.</h2>
+        <p class="chapter-desc">Proven stack across system design, backend engines, cloud platforms, and data
+          infrastructure.</p>
+      </div>
+
+      <div class="stack-categories-grid">
+
+        <div class="stack-box">
+          <div class="stack-box-header">
+            <span class="stack-num">01</span>
+            <h3>LANGUAGES &amp; CORE CS</h3>
+          </div>
+          <div class="pill-group">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">HTML/CSS</span>
+            <span class="tech-pill">Data Structures &amp; Algorithms</span>
+            <span class="tech-pill">OOP</span>
+            <span class="tech-pill">Operating Systems</span>
+            <span class="tech-pill">Computer Networks</span>
+            <span class="tech-pill">System Design</span>
+          </div>
+        </div>
+
+        <div class="stack-box">
+          <div class="stack-box-header">
+            <span class="stack-num">02</span>
+            <h3>BACKEND &amp; DISTRIBUTED</h3>
+          </div>
+          <div class="pill-group">
+            <span class="tech-pill highlight">FastAPI</span>
+            <span class="tech-pill">REST APIs</span>
+            <span class="tech-pill">Microservices Architecture</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">JWT Authentication</span>
+            <span class="tech-pill">Asynchronous Tasks</span>
+          </div>
+        </div>
+
+        <div class="stack-box">
+          <div class="stack-box-header">
+            <span class="stack-num">03</span>
+            <h3>DATA PIPELINES &amp; STORAGE</h3>
+          </div>
+          <div class="pill-group">
+            <span class="tech-pill highlight">Apache Spark</span>
+            <span class="tech-pill">ETL Pipelines</span>
+            <span class="tech-pill">MinIO Object Storage</span>
+            <span class="tech-pill">Data Aggregation &amp; Cleaning</span>
+            <span class="tech-pill">Metadata Lineage</span>
+          </div>
+        </div>
+
+        <div class="stack-box">
+          <div class="stack-box-header">
+            <span class="stack-num">04</span>
+            <h3>CLOUD, DEVOPS &amp; AI</h3>
+          </div>
+          <div class="pill-group">
+            <span class="tech-pill highlight">Docker</span>
+            <span class="tech-pill highlight">Kubernetes</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Git / GitHub</span>
+            <span class="tech-pill">CI/CD</span>
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">LLM Inference</span>
+            <span class="tech-pill">llama.cpp</span>
+            <span class="tech-pill">GraphRAG</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 04: LEADERSHIP & EDUCATION -->
+  <section id="leadership" class="section-editorial theme-dark">
+    <div class="container">
+      <div class="chapter-header light-text">
+        <span class="chapter-num gold-text">CHAPTER 04</span>
+        <h2 class="chapter-title">Leadership &amp; Academic Credentials.</h2>
+        <p class="chapter-desc">Guiding developer communities, leading AWS chapters, and academic rigor at KLE
+          Technological University.</p>
+      </div>
+
+      <div class="two-col-layout">
+
+        <!-- Leadership -->
+        <div class="col-block">
+          <h3 class="block-title gold-text">LEADERSHIP &amp; COMMUNITY</h3>
+
+          <div class="timeline-item">
+            <div class="time-header">
+              <span class="role-title">AWS Student Builder Groups — Chapter Lead</span>
+              <span class="role-org">KLE Technological University</span>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">Email</span>
-              <span class="contact-card-value">rishipkulkarni@gmail.com</span>
+            <p class="role-desc">
+              Directed campus AWS initiatives. Led hands-on cloud architecture workshops covering AWS EC2, S3, AWS
+              Lambda, and serverless design patterns, mentoring 50+ students in production deployments.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time-header">
+              <span class="role-title">Google Student Ambassador</span>
+              <span class="role-org">KLE Technological University</span>
             </div>
-            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
+            <p class="role-desc">
+              Represented Google developer platforms and technology programs across campus, spearheading student
+              technical bootcamps and developer activities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="col-block">
+          <h3 class="block-title gold-text">ACADEMIC FOUNDATION</h3>
+
+          <div class="edu-card">
+            <div class="edu-header">
+              <h4>KLE Technological University</h4>
+              <span class="edu-years">2023 — 2027</span>
+            </div>
+            <div class="edu-degree">B.E. Computer Science (Artificial Intelligence)</div>
+            <div class="edu-cgpa">CGPA: 8.68 / 10</div>
+            <div class="edu-courses">
+              <strong>Core Curriculum:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Operating
+              Systems, Computer Networks, Database Management Systems.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 05: CONTACT & DISPATCH -->
+  <section id="contact" class="section-editorial theme-cream dispatch-section">
+    <div class="container">
+      <div class="dispatch-box">
+        <span class="chapter-num">CHAPTER 05</span>
+        <h2 class="dispatch-title">Initiate <span class="serif-italic">Dispatch.</span></h2>
+        <p class="dispatch-sub">
+          Available for high-impact backend engineering roles, cloud architecture projects, and AI system
+          collaborations.
+        </p>
+
+        <div class="contact-links-grid">
+          <a href="mailto:rishipkulkarni@gmail.com" class="contact-card">
+            <div class="contact-card-header">
+              <span class="contact-lbl">EMAIL DISPATCH</span>
+              <span class="contact-arrow">&rarr;</span>
+            </div>
+            <span class="contact-val">rishipkulkarni@gmail.com</span>
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-card"
-            id="contact-github" aria-label="Visit Rishi's GitHub">
-            <div class="contact-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-              </svg>
+
+          <a href="tel:+918861606007" class="contact-card">
+            <div class="contact-card-header">
+              <span class="contact-lbl">DIRECT PHONE</span>
+              <span class="contact-arrow">&rarr;</span>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">GitHub</span>
-              <span class="contact-card-value">github.com/rishi</span>
-            </div>
-            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
+            <span class="contact-val">+91 88616 06007</span>
           </a>
-          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-card"
-            id="contact-linkedin" aria-label="Visit Rishi's LinkedIn">
-            <div class="contact-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
+
+          <a href="https://linkedin.com/in/rishipkulkarni" target="_blank" rel="noopener noreferrer"
+            class="contact-card">
+            <div class="contact-card-header">
+              <span class="contact-lbl">LINKEDIN NETWORK</span>
+              <span class="contact-arrow">&rarr;</span>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">LinkedIn</span>
-              <span class="contact-card-value">linkedin.com/in/rishi</span>
+            <span class="contact-val">linkedin.com/in/rishipkulkarni</span>
+          </a>
+
+          <a href="https://github.com/geeky-rish" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-header">
+              <span class="contact-lbl">GITHUB CODEBASE</span>
+              <span class="contact-arrow">&rarr;</span>
             </div>
-            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
+            <span class="contact-val">github.com/geeky-rish</span>
           </a>
         </div>
       </div>
@@ -513,29 +509,22 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <span class="footer-logo">RK<span class="logo-dot">.</span></span>
-      <p class="footer-copy">© 2025 Rishi Kulkarni. Built with care, shipped with intent.</p>
-      <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>RISHI P KULKARNI</strong> — Computer Science &amp; AI Engineer
+      </div>
+      <div class="footer-right">
+        Passionate Engineer!
+      </div>
     </div>
   </footer>
 
-  <!-- MODALS (expandable project views) -->
-  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title"
-    aria-hidden="true">
-    <div class="modal-box" id="modal-box">
-      <button class="modal-close" id="modal-close" aria-label="Close modal">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
-      </button>
-      <div class="modal-content" id="modal-content"></div>
+  <!-- MODALS FOR SYSTEM ARCHITECTURE DETAILS -->
+  <div class="modal-overlay" id="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modal-body-content"></div>
     </div>
   </div>
 
