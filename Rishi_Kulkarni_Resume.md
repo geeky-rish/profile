@@ -1,39 +1,64 @@
-# RISHI P KULKARNI
-Location: India | Phone: +91 8861606007 | Email: rishipkulkarni@gmail.com
-LinkedIn: linkedin.com/in/rishipkulkarni | GitHub: github.com/geeky-rish | Portfolio: https://geeky-rish.github.io/profile/
+# Rishi P. Kulkarni — Resume Summary
 
-## EDUCATION
-**KLE Technological University** | [City], India
-*Bachelor of Engineering in Computer Science (Artificial Intelligence)* | Expected July 2026
-* **Relevant Coursework:** Data Structures & Algorithms, Object-Oriented Programming, System Design, Machine Learning
+**Email:** rishipkulkarni@gmail.com | **Phone:** +91 88616 06007
+**LinkedIn:** [linkedin.com/in/rishipkulkarni](https://linkedin.com/in/rishipkulkarni)
+**GitHub:** [github.com/geeky-rish](https://github.com/geeky-rish)
+**Portfolio:** [geeky-rish.github.io/profile](https://geeky-rish.github.io/profile)
 
-## SKILLS
-* **Languages:** Python, Java, Kotlin, JavaScript, HTML/CSS, SQL
-* **Technologies & Frameworks:** React, Node.js, Next.js, FastAPI, Flask, Android SDK
-* **Tools & DevOps:** Git, Docker, RESTful APIs, OpenCV, YOLOv8, llama.cpp, GGUF
-* **Core Competencies:** Data Structures & Algorithms, OOP, Prompt Engineering, LLM Inference
+---
 
-## PROJECTS
-**AdaptiLLM | Mobile AI Inference Engine** | *Android, Kotlin, GGUF, PyTorch*
-* **Problem:** Existing on-device LLMs for Android suffered from frequent Out-Of-Memory (OOM) crashes and high latency.
-* **Solution:** Architected a dynamic, context-aware inference engine utilizing GGUF formats to optimize token streaming and memory allocation.
-* **Result:** Eliminated OOM crashes and achieved near-instant perceived response times via adaptive memory management, significantly improving mobile UX.
+## Profile Summary
+Computer Science and Engineering (AI) undergraduate with experience building backend systems, cloud-native applications, distributed systems, and full-stack software through engineering projects and academic research. Developed REST APIs, containerized applications, and scalable software solutions with interests in backend engineering, cloud infrastructure, and data platforms.
 
-**Watchman CCTV | Real-Time Detection Pipeline** | *Python, YOLOv8, OpenCV*
-* **Problem:** Professional CCTV systems are expensive, and standard cameras lack real-time human detection.
-* **Solution:** Engineered a zero-cost computer vision pipeline by repurposing mobile devices as IP cameras via DroidCam.
-* **Result:** Achieved ~30 FPS video processing and sub-second alert latency for highly accurate human detection.
+---
 
-**Agentic AI Hackathon Platform | Full-Stack Web App** | *HTML/CSS, JavaScript, GitHub Pages*
-* **Problem:** Event organizers required a high-performance, premium platform to build credibility and drive participant registrations.
-* **Solution:** Designed and developed a responsive web application featuring a premium glassmorphism UI, real-time countdown, and dynamic components.
-* **Result:** Delivered the production-ready platform within a 6-hour sprint, directly facilitating user onboarding and event management.
+## Education
+- **KLE Technological University** — B.E. Computer Science (Artificial Intelligence) (2023 – 2027)
+- **Coursework:** Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Networks, Database Management Systems.
 
-## EXPERIENCE & LEADERSHIP
-**AWS Student Builder Groups Leader** | *KLE Technological University* | [Month, Year] – Present
-* Spearheaded cloud computing initiatives for a university cohort, organizing hands-on AWS workshops and architecture design sessions.
-* Mentored 50+ students in deploying scalable cloud solutions, significantly boosting campus engagement in emerging tech.
+---
 
-**Member** | *Internet Society (ISOC) India* | [Month, Year] – Present
-* Collaborated with a nationwide network of engineers and advocates to promote open internet protocols and decentralized web technologies.
-* Facilitated regional technical meetups, bridging the gap between students and industry professionals through knowledge-sharing events.
+## Technical Skills
+- **Languages:** Java, Python, SQL, HTML/CSS, C++, Kotlin
+- **Core CS:** DSA, OOP, Operating Systems, Computer Networks
+- **Backend:** FastAPI, REST APIs, Microservices, PostgreSQL, Redis, JWT Authentication
+- **Data Engineering:** Pandas, Apache Spark, ETL Pipelines, MinIO
+- **Frontend / DevOps:** React, Docker, Git, CI/CD
+- **ML/AI:** PyTorch, LLM Inference, llama.cpp, GraphRAG, FAISS, BM25, NetworkX, TFLite, Qwen2.5, Quantization
+
+---
+
+## Projects
+1. **DataForge — Enterprise Data Pipeline Orchestration Platform**
+   - *Tech:* FastAPI, Apache Spark, MinIO, PostgreSQL, Docker
+   - Built a data pipeline orchestration platform supporting dataset ingestion, Spark-based ETL processing, asynchronous job execution, and metadata management.
+   - Designed reusable Spark transformation workflows for cleaning, validation, aggregation, and schema enforcement of uploaded datasets.
+   - Integrated MinIO for object storage and PostgreSQL for metadata and job tracking, with Docker-based service orchestration for reproducible deployment.
+
+2. **AdaptiLLM — Adaptive On-Device LLM Inference**
+   - *Tech:* Android, Kotlin, C++, JNI, TFLite, Qwen2.5, Quantization
+   - Developed an adaptive on-device LLM inference system that dynamically selects inference configurations based on query complexity and device resource constraints.
+   - Implemented a policy engine that adapts CPU threads, context length and generation limits using latency, energy and quality signals, with a TFLite-based query classifier for workload characterization.
+   - Evaluated multiple inference modes on a quantized Qwen2.5 model, achieving improved latency and energy efficiency while maintaining response quality across 720 inference runs.
+
+3. **Synapse AI Tutor — Adaptive AI Tutoring Platform**
+   - *Tech:* Python, FastAPI, React, GraphRAG, FAISS, BM25, NetworkX, JWT
+   - Developed an AI tutoring platform that identifies learner knowledge gaps and adapts explanations to proficiency levels using LLMs and GraphRAG-based retrieval.
+   - Implemented hybrid retrieval using FAISS vector search, BM25 lexical search, and NetworkX knowledge graphs to provide relevant context for LLM-generated responses.
+
+---
+
+## Experience & Leadership
+- **AWS Student Builder Groups** — Chapter Lead, KLE Technological University
+  - Led cloud workshops covering EC2, S3, Lambda, and serverless architectures while mentoring 50+ students in hands-on AWS deployments.
+- **Google Student Ambassador** — KLE Technological University
+  - Represented Google developer initiatives on campus and organized technical learning activities for students.
+
+---
+
+## Awards, Achievements & Publications
+- **Best Paper Award**, ComSIA 2026 (Springer) — First Author, *Reinforcement Learning for Dynamic Pricing*.
+- **Accepted**, NCMEDAI 2026 (Springer) — Deep Learning-based research paper.
+- **Global Public Rank 15**, WiDS Datathon Challenge 2025.
+- **Winner**, GenAI Hackathon 2026 — State-level Hackathon, KLE Technological University.
+- **Winner**, Agentic AI Hackathon 2026 — State-level Hackathon, KLE Technological University.

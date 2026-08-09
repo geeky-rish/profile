@@ -32,41 +32,58 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBody = document.getElementById('modal-body-content');
 
   const PROJECT_DETAILS = {
-    'modal-docchat': {
-      title: 'DocChat — Full-Stack RAG Document Q&A Platform',
-      badge: 'FASTAPI · REACT · POSTGRESQL · REDIS · JWT · DOCKER',
-      overview: 'DocChat is an end-to-end asynchronous document Q&A platform. Users can upload heterogeneous PDF/text documents and engage in context-aware conversational search via vector embeddings and RAG pipelines.',
-      architecture: [
-        'FastAPI backend providing asynchronous API endpoints for authentication, file uploads, and stream-based LLM response handling.',
-        'React single-page frontend delivering instant streaming token rendering and interactive document previews.',
-        'JWT-based stateful/stateless session security for granular user document workspace isolation.',
-        'PostgreSQL relational schema storing metadata, access controls, and chat history.',
-        'Redis caching layer caching vector retrieval hits and frequently queried embeddings to reduce processing latency.',
-        'Full containerization with Docker Compose for seamless local development and production static/cloud deployment.'
-      ]
-    },
     'modal-dataforge': {
       title: 'DataForge — Enterprise Data Pipeline Orchestrator',
       badge: 'FASTAPI · APACHE SPARK · MINIO · POSTGRESQL · DOCKER',
-      overview: 'DataForge is a high-throughput data ingestion and distributed ETL pipeline orchestration platform designed for enterprise data cleaning, aggregation, and analytical data transformation.',
+      overview: 'DataForge is a high-throughput data ingestion and distributed ETL pipeline orchestration platform designed for enterprise data cleaning, aggregation, and analytical dataset transformations.',
       architecture: [
-        'PySpark / Apache Spark execution engine executing distributed transformations on high-volume structured datasets.',
-        'MinIO S3-compatible object storage handling raw dataset uploads and processed parquet/delta output artifacts.',
-        'PostgreSQL metadata database tracking job execution status, transformation lineage, and workflow schema definitions.',
-        'FastAPI API server exposing REST interfaces to schedule, trigger, and monitor ETL pipeline runs asynchronously.',
-        'Docker container topology encapsulating Spark worker nodes, API gateway, and storage clusters.'
+        'Built a data pipeline orchestration platform supporting dataset ingestion, Spark-based ETL processing, asynchronous job execution, and metadata management.',
+        'Designed reusable Apache Spark transformation workflows for cleaning, validation, aggregation, and schema enforcement of uploaded datasets.',
+        'Integrated MinIO S3-compatible object storage alongside PostgreSQL for persistent job metadata, transformation lineage, and workflow tracking.',
+        'Implemented Docker-based service orchestration encapsulating Spark worker nodes, FastAPI backend gateway, and object storage clusters for reproducible deployment.'
+      ]
+    },
+    'modal-adaptillm': {
+      title: 'AdaptiLLM — Adaptive On-Device LLM Inference Engine',
+      badge: 'ANDROID · KOTLIN · C++ · JNI · TFLITE · QWEN2.5 · QUANTIZATION',
+      overview: 'AdaptiLLM is an adaptive on-device LLM inference framework that dynamically selects optimal inference configurations based on real-time query complexity and mobile hardware constraints.',
+      architecture: [
+        'Engineered an adaptive policy engine that dynamically adjusts CPU threads, context length window, and generation token limits using live latency, energy, and quality feedback signals.',
+        'Implemented a Lightweight TFLite-based query classifier for zero-overhead workload characterization prior to model execution.',
+        'Integrated native C++ runtime bindings via Android NDK / JNI to interface directly with quantized LLM execution backends.',
+        'Rigorously benchmarked across 720 inference runs on a quantized Qwen2.5 model, proving significant improvements in battery energy efficiency and TTFT (Time-To-First-Token) latency while preserving answer quality.'
+      ]
+    },
+    'modal-synapse': {
+      title: 'Synapse AI Tutor — Adaptive AI Tutoring Platform',
+      badge: 'PYTHON · FASTAPI · REACT · GRAPHRAG · FAISS · BM25 · NETWORKX · JWT',
+      overview: 'Synapse AI Tutor is an adaptive learning engine that diagnoses learner knowledge gaps and tailors domain explanations to individual student proficiency using LLMs and GraphRAG knowledge graphs.',
+      architecture: [
+        'Built a hybrid retrieval architecture combining FAISS dense vector search, BM25 sparse lexical search, and NetworkX topological knowledge graphs for high-precision LLM context grounding.',
+        'Designed automated learner gap identification algorithms that track conceptual mastery and dynamically adjust explanation granularity.',
+        'Exposed async FastAPI REST APIs protected by JWT authentication to guarantee complete state isolation across student sessions.',
+        'Integrated interactive React frontend components rendering real-time streaming LLM responses and knowledge graph visualizations.'
+      ]
+    },
+    'modal-docchat': {
+      title: 'DocChat — Full-Stack RAG Document Q&A Platform',
+      badge: 'FASTAPI · REACT · POSTGRESQL · REDIS · JWT · DOCKER',
+      overview: 'DocChat is an end-to-end asynchronous document intelligence platform enabling conversational querying of uploaded documentation via an optimized Retrieval-Augmented Generation (RAG) pipeline.',
+      architecture: [
+        'FastAPI backend providing asynchronous API endpoints for authentication, document parsing, and streaming token response rendering.',
+        'JWT-based session security and tenant isolation for user document workspaces.',
+        'PostgreSQL relational schema storing document metadata, access controls, and chat history.',
+        'Redis caching layer caching vector retrieval hits and frequently queried embeddings to minimize inference latency.'
       ]
     },
     'modal-5g': {
-      title: 'Intelligent Cloud-Native 5G Network Slice Orchestration',
+      title: 'Intelligent Cloud-Native 5G Network Slice Orchestrator',
       badge: 'PYTHON · KUBERNETES · OPEN5GS · UERANSIM · PROMETHEUS · GRAFANA',
-      overview: 'A Kubernetes-native 5G slicing testbed simulating enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency Communication (URLLC), and massive Machine-Type Communication (mMTC) traffic classes. Research under peer review.',
+      overview: 'A Kubernetes-native 5G slicing testbed simulating eMBB, URLLC, and mMTC network service classes dynamically. Research under peer review.',
       architecture: [
         'Kubernetes container orchestration managing core network NFs (AMF, SMF, UPF) powered by Open5GS.',
-        'UERANSIM gNodeB and UE simulators generating realistic 5G control and user plane traffic.',
-        'Automated Python monitoring pipeline querying Prometheus metrics in real-time to compute slice QoS guarantees.',
-        'Dynamic resource allocation engine utilizing Kubernetes APIs to dynamically resize Pod CPU limits and network bandwidth bandwidth based on demand spikes.',
-        'Grafana dashboard suite visualizing live latency, packet loss, throughput, and CPU metrics across network slices.'
+        'UERANSIM gNodeB and UE simulators generating realistic 5G control plane and user plane traffic.',
+        'Automated Python monitoring pipeline querying Prometheus metrics in real-time to compute slice QoS guarantees and adjust Pod resources dynamically via Kubernetes APIs.'
       ]
     }
   };
