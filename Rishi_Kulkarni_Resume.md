@@ -35,7 +35,7 @@ Computer Science and Engineering (AI) undergraduate with experience building bac
    - Designed reusable Spark transformation workflows for cleaning, validation, aggregation, and schema enforcement of uploaded datasets.
    - Integrated MinIO for object storage and PostgreSQL for metadata and job tracking, with Docker-based service orchestration for reproducible deployment.
 
-2. **AdaptiLLM — Adaptive On-Device LLM Inference**
+2. **AdaptiLLM — Adaptive On-Device LLM Inference** *(Accepted @ ICSoftComp 2026, Springer CCIS)*
    - *Tech:* Android, Kotlin, C++, JNI, TFLite, Qwen2.5, Quantization
    - Developed an adaptive on-device LLM inference system that dynamically selects inference configurations based on query complexity and device resource constraints.
    - Implemented a policy engine that adapts CPU threads, context length and generation limits using latency, energy and quality signals, with a TFLite-based query classifier for workload characterization.
@@ -57,6 +57,7 @@ Computer Science and Engineering (AI) undergraduate with experience building bac
 ---
 
 ## Awards, Achievements & Publications
+- **Accepted**, ICSoftComp 2026 (Springer CCIS) — *AdaptiLLM: Adaptive On-Device LLM Inference*.
 - **Best Paper Award**, ComSIA 2026 (Springer) — First Author, *Reinforcement Learning for Dynamic Pricing*.
 - **Accepted**, NCMEDAI 2026 (Springer) — Deep Learning-based research paper.
 - **Global Public Rank 15**, WiDS Datathon Challenge 2025.

@@ -45,13 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'modal-adaptillm': {
       title: 'AdaptiLLM — Adaptive On-Device LLM Inference Engine',
-      badge: 'ANDROID · KOTLIN · C++ · JNI · TFLITE · QWEN2.5 · QUANTIZATION',
-      overview: 'AdaptiLLM is an adaptive on-device LLM inference framework that dynamically selects optimal inference configurations based on real-time query complexity and mobile hardware constraints.',
+      badge: 'ACCEPTED @ ICSOFTCOMP 2026 (SPRINGER CCIS) · ANDROID · KOTLIN · C++ · JNI · TFLITE · QWEN2.5',
+      overview: 'AdaptiLLM is an adaptive on-device LLM inference framework that dynamically selects optimal inference configurations based on real-time query complexity and mobile hardware constraints. Research paper accepted for publication at ICSoftComp 2026 (Springer CCIS).',
       architecture: [
+        'Research paper accepted for publication at ICSoftComp 2026 in the Springer Communications in Computer and Information Science (CCIS) series.',
         'Engineered an adaptive policy engine that dynamically adjusts CPU threads, context length window, and generation token limits using live latency, energy, and quality feedback signals.',
         'Implemented a Lightweight TFLite-based query classifier for zero-overhead workload characterization prior to model execution.',
         'Integrated native C++ runtime bindings via Android NDK / JNI to interface directly with quantized LLM execution backends.',
-        'Rigorously benchmarked across 720 inference runs on a quantized Qwen2.5 model, proving significant improvements in battery energy efficiency and TTFT (Time-To-First-Token) latency while preserving answer quality.'
+        'Rigorously benchmarked across 720 inference runs on a quantized Qwen2.5 model, proving significant improvements in battery energy efficiency and TTFT latency while preserving response quality.'
       ]
     },
     'modal-synapse': {
